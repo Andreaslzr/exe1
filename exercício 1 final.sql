@@ -32,7 +32,6 @@ addresLine2 varchar(100),
 state varchar(100),
 country varchar(100),
 postalCode bigint,
-territory varchar(100),
 primary key(officeCode)
 );
 
@@ -40,10 +39,8 @@ create table employees(
 employeeNumber bigint not null auto_increment,
 lastName varchar(100),
 firstName varchar(100),
-extension varchar(100),
 email varchar(100),
 officeCodeFK bigint not null,
-reportsTo varchar(100),
 jobTitle varchar(100),
 primary key(employeeNumber),
 foreign key(officeCodeFK) references offices(officeCode)
