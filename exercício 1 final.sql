@@ -26,7 +26,7 @@ foreign key(productLineFK) references productlines(productLine)
 create table offices(
 officeCode bigint not null auto_increment,
 city varchar(100),
-phone bigint,
+phone varchar(15),
 addresLine1 varchar(100),
 addresLine2 varchar(100),
 state varchar(100),
