@@ -31,7 +31,7 @@ addresLine1 varchar(100),
 addresLine2 varchar(100),
 state varchar(100),
 country varchar(100),
-postalCode bigint,
+postalCode varchar(10),
 primary key(officeCode)
 );
 
@@ -54,7 +54,7 @@ addresLine1 varchar(100),
 addresLine2 varchar(100),
 city varchar(100),
 state varchar(100),
-postalCode bigint,
+postalCode varchar(10),
 country varchar(100),
 salesRepEmployeeNumberFK bigint not null,
 creditLimit numeric(10,2),
