@@ -49,9 +49,7 @@ foreign key(officeCodeFK) references offices(officeCode)
 create table customers(
 customerNumber bigint not null auto_increment,
 customerName varchar(100),
-contactLastName varchar(100),
-contactFirstName varchar(100),
-phone bigint,
+phone varchar(15),
 addresLine1 varchar(100),
 addresLine2 varchar(100),
 city varchar(100),
@@ -129,4 +127,3 @@ inner join customers c on o.customerNumberFK = c.customerNumber
 inner join productlines pl on p.productLineFK = pl.productLine
 inner join employees e on c.salesRepEmployeeNumberFK = e.employeeNumber
 inner join offices oc on e.officeCodeFK = oc.officeCode;
-
